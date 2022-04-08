@@ -6,10 +6,12 @@
  *
  * Return: Always 0 (Success/Correct)
  */
+
 int main(void)	
 	
 {
 	int n;
+	
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
