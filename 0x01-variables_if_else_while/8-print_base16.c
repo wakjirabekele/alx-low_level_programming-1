@@ -7,12 +7,12 @@
 int main(void)
 {
 int x;
-char x;
+char x1;
 
 for (x = 0; x <= 9; x++)
 printf("%i", x);
-for (x = 'a'; x <= 'f'; ++x)
-putchar(x);
+for (x1 = 'a'; x1 <= 'f'; ++x1)
+putchar(x1);
 
 putchar('\n');
 
