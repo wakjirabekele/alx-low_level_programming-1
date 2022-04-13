@@ -1,5 +1,5 @@
 #include "main.h"
-/** 
+/**
  * add - function that add two integer
  * @a: takes value of a
  * @b: takes the value of b
