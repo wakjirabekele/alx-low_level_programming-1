@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * print_times_table - print the times table of the input
  * @n: the value of the times table
