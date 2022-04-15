@@ -3,8 +3,10 @@
 /**
  * print_number - print function
  * @n: input variable
+ *
  * Return: always 0
  */
+
 void print_number(int n)
 {
 	unsigned int m;
@@ -19,7 +21,6 @@ void print_number(int n)
 		m = n;
 	}
 	if (m / 10 != 0)
-		print_number (m / 10);
-
+	print_number (m / 10);
 	_putchar((m % 10) + '0');
 }
