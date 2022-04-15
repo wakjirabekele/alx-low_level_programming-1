@@ -3,6 +3,7 @@
  * print_line - print straight line
  * @n: input value
  * Return: always 0
+ */
 void print_line(int n)
 {
 	int i;
