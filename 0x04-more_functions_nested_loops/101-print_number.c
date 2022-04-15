@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-unsigned int m;
+int m;
 
 if (n < 0)
 {
@@ -21,6 +21,6 @@ else
 m = n;
 }
 if (m / 10 != 0)
-printf(m / 10);
+print_number(m / 10);
 _putchar((m % 10) + '0');
 }
