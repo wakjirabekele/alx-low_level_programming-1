@@ -17,7 +17,7 @@ void print_triangle(int size)
 				if ((size - i - 1) > j)
 					_putchar(' ');
 				else
-					_putchar('*');
+					_putchar('#');
 			}
 			_putchar('\n');
 		}
