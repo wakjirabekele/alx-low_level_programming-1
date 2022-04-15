@@ -3,7 +3,7 @@
 /**
  * print_number - print function
  * @n: input variable
- * Return: void
+ * Return: always 0
  */
 void print_number(int n)
 {
@@ -19,7 +19,7 @@ void print_number(int n)
 		m = n;
 	}
 	if (m / 10 != 0)
-		print_number(m / 10);
+		print_number (m / 10);
 
 	_putchar((m % 10) + '0');
 }
