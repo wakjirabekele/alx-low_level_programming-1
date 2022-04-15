@@ -17,8 +17,8 @@ void print_most_numbers(void)
 		{
 			i++;
 		}
-		_putchar (i + '0');
+		printf(i + "0");
 	}
 
-	_putchar ('\n');
+	printf("\n");
 }
