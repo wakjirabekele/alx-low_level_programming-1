@@ -9,13 +9,16 @@
 
 void print_number(int n)
 {
-if (n < 0)
-{
-_putchar('-');
-_putchar(n);
-}
-else
-{
-_putchar(n);
-}
+	if (n < 0)
+	{
+		_putchar('-');
+		m = -n;
+	}
+	else
+	{
+		m = n;
+	}
+	if (m / 10 != 0)
+	print_number(m / 10);
+	_putchar((m % 10) + '0');
 }
