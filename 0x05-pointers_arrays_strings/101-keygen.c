@@ -3,7 +3,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
-* my pro
+* main - random password
+* Return: zero
 */
 int main(void)
 {
@@ -19,7 +20,7 @@ r = rand() % 122;
 if (r > 32)
 {
 a[i++] = r;
-n *= r;
+n += r;
 }
 }
 a[i++] = (2772 - n);
