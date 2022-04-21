@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * cap_string - capitalize each word
+ *cap_string - capitalize each word
  * @str: the parameter in the form of input
  * Return: character to be returned
  */
