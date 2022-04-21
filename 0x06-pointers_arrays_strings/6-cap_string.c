@@ -1,11 +1,13 @@
 #include "main.h"
 /**
  * cap_string - capitalize each word
- * @str: the parameter
- * Return: character[B
+ * @str: the parameter in the form of input
+ * Return: character to be returned
  */
+
 char *cap_string(char *str)
 {
+
 	int i;
 
 	for (i = 0; str[i]; i++)
@@ -25,5 +27,6 @@ char *cap_string(char *str)
 			}
 		}
 	}
+
 	return (str);
 }
