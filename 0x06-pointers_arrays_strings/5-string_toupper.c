@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * string_toupper - conver the string to upper
- * @str: string
+ * @p: string
  * Return: return the character
  */
 
