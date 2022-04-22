@@ -5,17 +5,19 @@
  * Return: return the character
  */
 
-char string_toupper(char *str)
+char *string_toupper(char *p)
 {
-	int i;
+	int a = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (p[a])
 	{
-		if (str[i] >= 'a' && str <= 'z')
+		if (p[a] >= 97 && p[a] <= 122)
 		{
-			str[i] = str[i] - 32;
+			p[a] -= 32;
 		}
+
+		a++;
 	}
 
-	return (str);
+	return (p);
 }
