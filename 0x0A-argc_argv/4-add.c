@@ -1,68 +1,46 @@
+#include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 #include <string.h>
 
 /**
- * check_num - check - string there are digit
- * @str: array str
- *
- * Return: Always 0 (Success)
- */
-
-int check_num(char *str)
-{
-unsigned int count;
-
-count = 0;
-while (count < strlen(str))
-
-{
-if (!isdigit(str[count]))
-{
-return (0);
-}
-
-count++;
-}
-return (1);
-}
-
-/**
- * main - Print the name of the program
- * @argc: Count arguments
- * @argv: Arguments
- *
- * Return: Always 0 (Success)
- */
-
+  * main - Prints the sum of args positive numbers
+  * @argc: argument count
+  * @argv: argument vector
+  *
+  * Return: Always zero
+  */
 int main(int argc, char *argv[])
 {
-int count;
-int str_to_int;
-int sum;
+	int i;
+	unsigned int k, sum = 0;
+	char *e;
 
-sum = 0;
-count = 1;
-while (count < argc)
-{
-if(check_num(argv[count]))
+	if (argc > 1)
+	{
+		for (i = 1; i < argc; i++)
+		{
+			e = argv[i];
 
-{
-str_to_int = atoi(argv[count]);
-sum += str_to_int;
-}
+			for (k = 0; k < strlen(e); k++)
+			{
+				if (e[k] < 48 || e[k] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 
-else
-{
-printf("Error\n");
-return (1);
-}
+			sum += atoi(e);
+			e++;
+		}
 
-count++;
-}
+		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("0\n");
+	}
 
-printf("%d\n", sum);
-
-return (0);
+	return (0);
 }
